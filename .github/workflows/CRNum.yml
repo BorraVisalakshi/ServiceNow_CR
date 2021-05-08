@@ -26,4 +26,4 @@ jobs:
       - name: Call script filr
         shell: pwsh
         run: |
-               .\CRNum.ps1
+               .\CRNum.ps1 -username ${{ secrets.USERNAME }} -password ${{ secrets.PASSWORD }} -crnumber ${{ secrets.CR_NUMBER }}
