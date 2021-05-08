@@ -1,10 +1,3 @@
-param
-(
-	[Parameter(Mandatory=$true)][String]$username,
-	[Parameter(Mandatory=$true)][String]$password,
-	[Parameter(Mandatory=$true)][String]$crnumber
- 
-)
 
 $web_client = new-object System.Net.Webclient
 $web_client.Credentials = New-Object System.Net.NetworkCredential(admin, 12345678)
